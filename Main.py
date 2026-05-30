@@ -313,7 +313,7 @@ class BatchConversionManager(QThread):
                               "success" if fail_count == 0 else "warning")
 
 
-class PsychToCodenameConverter(QMainWindow):
+class CodenameToPsychConverter(QMainWindow):
     def __init__(self):
         super().__init__()
         self.current_xml_path = None
@@ -346,7 +346,7 @@ class PsychToCodenameConverter(QMainWindow):
         main_layout.setSpacing(15)
         main_layout.setContentsMargins(20, 20, 20, 20)
 
-        title_label = QLabel("Psych to Codename Character Converter")
+        title_label = QLabel("Codename to Psych Character Converter")
         title_font = QFont("Segoe UI", 16, QFont.Weight.Bold)
         title_label.setFont(title_font)
         title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -571,10 +571,10 @@ class PsychToCodenameConverter(QMainWindow):
         toolbar.addWidget(spacer)
 
     def open_website(self):
-        webbrowser.open("https://sirthegamercoder.github.io/Psych-to-Codename-Character-Converter/")
+        webbrowser.open("https://sirthegamercoder.github.io/Codename-to-Psych-Character-Converter/")
 
     def report_bug(self):
-        webbrowser.open("https://github.com/sirthegamercoder/Psych-to-Codename-Character-Converter/issues")
+        webbrowser.open("https://github.com/sirthegamercoder/Codename-to-Psych-Character-Converter/issues")
 
     def center(self):
         frame_geo = self.frameGeometry()
@@ -1035,14 +1035,14 @@ def main():
     app_icon_path = resource_path("icons/app.ico")
 
     app = QApplication(sys.argv)
-    app.setApplicationName("Psych to Codename Character Converter")
+    app.setApplicationName("Codename to Psych Character Converter")
 
     if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
         app.setWindowIcon(QIcon(app_icon_path))
     else:
         app.setWindowIcon(QIcon("icons/app.ico"))
 
-    window = PsychToCodenameConverter()
+    window = CodenameToPsychConverter()
     window.show()
 
     sys.exit(app.exec())

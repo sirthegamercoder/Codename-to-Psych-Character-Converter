@@ -1,7 +1,9 @@
-# Psych to Codename Character Converter
+# Codename to Psych Character Converter
 **An open-source tool for convert Codename to Psych character**
 
 This is a tool built with Python using PySide6 that allows you to convert a character from the codename (`.xml`) format to the Psych (`.json`) format.
+
+*Formerly known as Psych to Codename Character Converter*
 
 ## Quick Start
 
@@ -29,7 +31,7 @@ This is a tool built with Python using PySide6 that allows you to convert a char
 If you'd like to contribute to this open-source tool, please fork it, make your changes, and then submit a pull request.
 
 ## Bug Report
-If you'd see a bug, please report the bug [here](https://github.com/sirthegamercoder/Psych-to-Codename-Character-Converter/issues)!
+If you'd see a bug, please report the bug [here](https://github.com/sirthegamercoder/Codename-to-Psych-Character-Converter/issues)!
 
 ## License
 This open-source tool is licensed under GNU Affero General Public License v3.0. See `LICENSE` for details.
