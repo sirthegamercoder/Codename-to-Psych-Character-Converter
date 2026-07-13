@@ -35,3 +35,4 @@ If you'd see a bug, please report the bug [here](https://github.com/sirthegamerc
 
 ## License
 This open-source tool is licensed under GNU Affero General Public License v3.0. See `LICENSE` for details.
+[![](https://gamebanana.com/tools/embeddables/22380?type=large)](https://gamebanana.com/tools/22380)
